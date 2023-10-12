@@ -33,6 +33,5 @@
 phonebook
 megaphone
 
-*.hpp
 *.gch
 main
