@@ -6,7 +6,7 @@
 /*   By: sdeeyien <sukitd@gmail.com>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 14:36:39 by sdeeyien          #+#    #+#             */
-/*   Updated: 2023/10/09 16:59:17 by sdeeyien         ###   ########.fr       */
+/*   Updated: 2023/10/16 05:29:08 by sdeeyien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,15 @@
 using std::cout;
 using std::cin;
 using std::endl;
+
+Contact::Contact()
+{
+	firstName = "";
+	lastName = "";
+	nickName = "";
+	phoneNumber = "";
+	darkestSecret = "";
+}
 
 Contact::Contact(string f_name, string l_name, string n_name, string p_no, string secret)
 {

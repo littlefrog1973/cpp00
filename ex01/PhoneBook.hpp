@@ -6,11 +6,12 @@
 /*   By: sdeeyien <sukitd@gmail.com>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 09:39:33 by sdeeyien          #+#    #+#             */
-/*   Updated: 2023/10/12 16:03:51 by sdeeyien         ###   ########.fr       */
+/*   Updated: 2023/10/16 05:38:42 by sdeeyien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef PHONEBOOK_HPP
+# define PHONEBOOK_HPP
 # include <iostream>
 # include "Contact.hpp"
 # define MAX_CONTACTS 8
@@ -34,3 +35,4 @@ public:
 	int		returnCount();
 	void	displayOneContact(int index);
 };
+#endif

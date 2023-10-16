@@ -6,7 +6,7 @@
 /*   By: sdeeyien <sukitd@gmail.com>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 09:50:13 by sdeeyien          #+#    #+#             */
-/*   Updated: 2023/10/09 17:10:26 by sdeeyien         ###   ########.fr       */
+/*   Updated: 2023/10/16 05:45:18 by sdeeyien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,14 @@ bool	PhoneBook::addContact(const Contact& contact)
 {
 	if (contactCount < maxContacts)
 	{
-		oldestContactIndex = contactCount;
 		contacts[contactCount++] = contact;
-		return true;
 	}
 	else
 	{
 		contacts[oldestContactIndex] = contact;
-		return true;
+		oldestContactIndex = (oldestContactIndex + 1) % maxContacts;
 	}
+	return true;
 }
 
 void	PhoneBook::displayAllContacts()

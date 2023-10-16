@@ -6,15 +6,15 @@
 #    By: sdeeyien <sukitd@gmail.com>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/17 13:45:55 by sdeeyien          #+#    #+#              #
-#    Updated: 2023/10/12 16:08:33 by sdeeyien         ###   ########.fr        #
+#    Updated: 2023/10/16 05:23:46 by sdeeyien         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = c++
-CFLAGS = -Wall -Werror -Wextra -g
+CFLAGS = -Wall -Werror -Wextra -g -std=c++98
 SRCDIR = ./
 OBJDIR =
-DEPS = Contact.hpp Phonebook.hpp
+DEPS = Contact.hpp PhoneBook.hpp
 
 SRC = main.cpp Contact.cpp PhoneBook.cpp
 BONUS =
@@ -39,7 +39,7 @@ $(BONUS_NAME): $(BONUS_OBJ)
 	$(CC) $(CFLAGS) $^ -o $@
 
 %.o: $(SRCDIR)%.cpp $(DEPS)
-	$(CC) -c $(CFLAGS) $(DEPS) $^
+	$(CC) -c $(CFLAGS) $(DEPS) $<
 
 clean :
 	rm -f *.o
