@@ -3,18 +3,18 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: sdeeyien <sukitd@gmail.com>                +#+  +:+       +#+         #
+#    By: littlefrog <littlefrog@student.42.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/17 13:45:55 by sdeeyien          #+#    #+#              #
-#    Updated: 2023/10/16 05:23:46 by sdeeyien         ###   ########.fr        #
+#    Updated: 2023/10/16 09:08:25 by littlefrog       ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = c++
-CFLAGS = -Wall -Werror -Wextra -g -std=c++98
+CFLAGS = -Wall -Werror -Wextra -g
 SRCDIR = ./
 OBJDIR =
-DEPS = Contact.hpp PhoneBook.hpp
+DEPS =
 
 SRC = main.cpp Contact.cpp PhoneBook.cpp
 BONUS =
